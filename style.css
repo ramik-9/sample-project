@@ -1,0 +1,76 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents layout breaking */
+}
+
+.container{
+    border: 1px transparent;
+    width: 50%;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.544);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#search{
+    border: 1px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Inter',sans-serif;
+    margin-left: 20px;
+}
+
+#search:focus{
+    border-color: #00ff26;
+    outline: none;
+    transform: translateY(-5px);
+    transition: 300ms;
+    box-shadow: 1px 5px 8px rgba(17, 0, 255, 0.646);
+}
+
+#search-btn{
+    border: 1px transparent;
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: #ff3700;
+    font-size: 24px;
+    font-family: 'Inter',sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#search-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 7px 10px 0 rgba(17, 0, 255, 0.646);
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+
+#display{
+    border: 1px transparent;
+    border-radius: 10px;
+    width: 70%;
+    height: auto; /* Changed from 50vh to auto so it fits the content nicely */
+    min-height: 30vh;
+    font-size: 24px; /* Increased font size for better readability */
+    font-family: 'Inter',sans-serif,arial;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000b3;
+    margin-top: 40px;
+    margin-left: 125px;
+    box-shadow:  0 9px 10px 0 rgba(0, 0, 0, 0.646);
+    
+    /* Added to center the weather info inside your box */
+    text-align: center;
+    padding: 40px;
+}
