@@ -1,4 +1,4 @@
-const apiKey = "62a1a0bf04ca3f6c8acc6da8b6543006"; 
+const apiKey = "4f856c4338451883e64ccd2f294acc92"; 
 const searchBtn = document.getElementById('search-btn');
 const searchInput = document.getElementById('search');
 const displaySection = document.getElementById('display');
@@ -18,7 +18,7 @@ searchBtn.addEventListener('click', function(){
 
 // Async function to fetch weather data from API
 async function getWeatherData(city){
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=en`;
+    const url = `https://home.openweathermap.org/api_keys?q=${city}&appid=${apiKey}&units=metric&lang=en`;
     try {
         const response = await fetch(url);
         if(!response.ok)
