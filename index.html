@@ -8,16 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <section class="container">
-            <input type="text" id="search" placeholder="Enter The City...">
-            <button id="search-btn">Search</button>
-        </section>
-    </center>
+    <section class="nav-bar">
+        <img src="../../photo_2026-07-15_13-05-49.jpg" alt="logo" class="logo">
+        <ul class="menu-list">
+            <li><a href="#register-student" class="active">Register Student</a></li>
+            <li><a href="#" >Show All Students</a></li>
+            <li><a href="#" >About As</a></li>
+        </ul>
+    </section>
 
-    <!-- Your exact display section -->
-    <section id="display">
-        
+    <section class="register-student" id="register-student">
+         <!-- Entetr the name -->
+        <div class="name"><br>
+            <label>Name</label>
+            <input type="text" id="input-name" placeholder="Enter The Student Name">
+        </div>
+
+        <!-- Enter the age -->
+        <div class="age"><br>
+            <label>Age</label>
+            <input type="number" id="input-age" placeholder="Enter The Student Age">
+        </div>
+
+        <!-- Enter the Sex -->
+        <div class="sex"><br>
+            <label>Sex</label>
+            <input type="text" id="input-sex" placeholder="Enter The Student Sex">
+        </div>
+
+        <div class="container"><br>
+            <button type="submit" id="submit" class="btn-p">Register</button>
+        </div>
     </section>
 </body>
 <script src="script.js"></script>
