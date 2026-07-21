@@ -182,7 +182,29 @@
     border: 1px transparent;
     border-radius: 10px;
     width: 70%;
-    background-color: #f90032;
+    background-color: transparent;
     height: 20vh;
     align-items: center;
+    margin-top: 15px;
+    margin-left: 65px;
+}
+
+#submit{
+    border: 1px transparent;
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #9203f8;
+    margin-top: 14px;
+    margin-left: 135px;
+}
+
+#submit:hover{
+    transition: 300ms;
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 3px 8px 10px #9203f8;
 }
